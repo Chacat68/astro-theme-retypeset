@@ -58,7 +58,7 @@ export const themeConfig: ThemeConfig = {
     locale: 'zh', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
     // 更多语言
     // 不要重复填写上面的语言代码，可以是空数组 []
-    moreLocales: [''], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
+    moreLocales: [], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
     // 文章文本的字体样式
     fontStyle: 'sans', // sans, serif
     // 文章的日期格式
