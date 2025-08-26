@@ -1,80 +1,80 @@
 import type { ThemeConfig } from '@/types'
 
 export const themeConfig: ThemeConfig = {
-  // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
+  // 网站信息 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
   site: {
-    // site title
-    title: 'Retypeset',
-    // site subtitle
-    subtitle: 'Revive the beauty of typography',
-    // site description
-    description: 'Retypeset is a static blog theme based on the Astro framework. Inspired by Typography, Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.',
-    // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
-    i18nTitle: true, // true, false
-    // author name
-    author: 'radishzz',
-    // site url
-    url: 'https://retypeset.radishzz.cc',
-    // favicon url
-    // recommended formats: svg, png or ico
-    favicon: '/icons/favicon.svg', // or https://example.com/favicon.svg
+    // 网站标题
+    title: '付之一笑',
+    // 网站副标题
+    subtitle: '日常在阅读、创作、跑步。',
+    // 网站描述
+    description: '不断创作一些新东西，源源不断给自己创造心流！',
+    // 使用 src/i18n/ui.ts 中的国际化标题/副标题/描述，而不是上面的静态内容
+    i18nTitle: false, // true, false
+    // 作者姓名
+    author: 'CHACAT',
+    // 网站链接
+    url: 'https://www.chawfoo.com',
+    // 网站图标链接
+    // 推荐格式：svg、png 或 ico
+    favicon: '/icons/favicon.svg', // 或 https://example.com/favicon.svg
   },
-  // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
+  // 网站信息 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 结束
 
-  // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
+  // 颜色设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
   color: {
-    // default theme mode
-    mode: 'light', // light, dark, auto
+    // 默认主题模式
+    mode: 'auto', // light, dark, auto
     light: {
-      // primary color
-      // used for title, hover, etc
-      // oklch color picker: https://oklch.com/
+      // 主要颜色
+      // 用于标题、悬停等
+      // oklch 颜色选择器：https://oklch.com/
       primary: 'oklch(25% 0.005 298)',
-      // secondary color
-      // used for post text
+      // 次要颜色
+      // 用于文章文本
       secondary: 'oklch(40% 0.005 298)',
-      // background color
+      // 背景颜色
       background: 'oklch(96% 0.005 298)',
-      // highlight color
-      // used for navbar, selected text, etc
+      // 高亮颜色
+      // 用于导航栏、选中文本等
       highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
     },
     dark: {
-      // primary color
+      // 主要颜色
       primary: 'oklch(92% 0.005 298)',
-      // secondary color
+      // 次要颜色
       secondary: 'oklch(77% 0.005 298)',
-      // background color
+      // 背景颜色
       background: 'oklch(22% 0.005 298)',
-      // highlight color
+      // 高亮颜色
       highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
     },
   },
-  // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
+  // 颜色设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 结束
 
-  // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
+  // 全局设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
   global: {
-    // default language
+    // 默认语言
     locale: 'zh', // de, en, es, fr, ja, ko, pl, pt, ru, zh, zh-tw
-    // more languages
-    // not fill in the locale code above again, can be an empty array []
-    moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
-    // font styles for post text
+    // 更多语言
+    // 不要重复填写上面的语言代码，可以是空数组 []
+    moreLocales: [''], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
+    // 文章文本的字体样式
     fontStyle: 'sans', // sans, serif
-    // date format for posts
+    // 文章的日期格式
     dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
-    // table of contents for posts
+    // 文章目录
     toc: true, // true, false
-    // KaTeX math rendering
+    // KaTeX 数学公式渲染
     katex: true, // true, false
-    // reduce motion
+    // 减少动画
     reduceMotion: false, // true, false
   },
-  // GLOBAL SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
+  // 全局设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 结束
 
-  // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
+  // 评论设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
   comment: {
-    // enable comment system
+    // 启用评论系统
     enabled: true, // true, false
     // giscus
     // https://giscus.app/
@@ -93,108 +93,108 @@ export const themeConfig: ThemeConfig = {
     // https://twikoo.js.org/
     twikoo: {
       envId: '',
-      // version: frontend version can be changed in package.json
+      // 版本：前端版本可以在 package.json 中更改
     },
     // waline
     // https://waline.js.org/en/
     waline: {
-      // server url
+      // 服务器链接
       serverURL: 'https://retypeset-comment.radishzz.cc',
-      // emoji url
+      // 表情包链接
       emoji: [
         'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
         // 'https://unpkg.com/@waline/emojis@1.2.0/bmoji',
-        // more emojis: https://waline.js.org/en/guide/features/emoji.html
+        // 更多表情包：https://waline.js.org/en/guide/features/emoji.html
       ],
-      // gif search
+      // gif 搜索
       search: false, // true, false
-      // image uploader
+      // 图片上传
       imageUploader: false, // true, false
     },
   },
-  // COMMENT SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
+  // 评论设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 结束
 
-  // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
+  // SEO 设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
   seo: {
     // @twitter ID
-    twitterID: '@radishzz_',
-    // site verification
+    twitterID: '@Chacat68',
+    // 网站验证
     verification: {
-      // google search console
+      // 谷歌搜索控制台
       // https://search.google.com/search-console
-      google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
-      // bing webmaster tools
+      google: '',
+      // 必应网站管理员工具
       // https://www.bing.com/webmasters
-      bing: '64708CD514011A7965C84DDE1D169F87',
-      // yandex webmaster
+      bing: '',
+      // yandex 网站管理员
       // https://webmaster.yandex.com
       yandex: '',
-      // baidu search
+      // 百度搜索
       // https://ziyuan.baidu.com
       baidu: '',
     },
-    // google analytics
+    // 谷歌分析
     // https://analytics.google.com
     googleAnalyticsID: '',
-    // umami analytics
+    // umami 分析
     // https://cloud.umami.is
-    umamiAnalyticsID: '520af332-bfb7-4e7c-9386-5f273ee3d697',
-    // follow verification
+    umamiAnalyticsID: 'e49c70c3-26a8-46d9-b241-6a47a00574f2',
+    // follow 验证
     // https://follow.is/
     follow: {
       // feed ID
       feedID: '',
-      // user ID
+      // 用户 ID
       userID: '',
     },
-    // apiflash access key
-    // automatically generate website screenshots for open graph images
-    // get your access key at: https://apiflash.com/
+    // apiflash 访问密钥
+    // 自动为开放图谱图像生成网站截图
+    // 在此获取访问密钥：https://apiflash.com/
     apiflashKey: '',
   },
-  // SEO SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
+  // SEO 设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 结束
 
-  // FOOTER SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
+  // 页脚设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
   footer: {
-    // social links
+    // 社交链接
     links: [
       {
         name: 'RSS',
-        url: '/atom.xml', // or /rss.xml
+        url: '/atom.xml', // 或 /rss.xml
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
+        url: 'https://github.com/Chacat68',
       },
       {
         name: 'Email',
-        url: 'email@radishzz.cc',
+        url: 'chawf56@outlook.com',
       },
-      // {
-      //   name: 'X',
-      //   url: 'https://x.com/radishzz_',
-      // },
+      {
+        name: 'X',
+         url: 'https://x.com/Chacat68',
+      },
     ],
-    // year of website start
-    startYear: 2025,
+    // 网站开始年份
+    startYear: 2020,
   },
-  // FOOTER SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
+  // 页脚设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 结束
 
-  // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
+  // 预加载设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 开始
   preload: {
-    // image hosting url
-    // optimize remote images in Markdown files to avoid cumulative layout shift
+    // 图片托管链接
+    // 优化 Markdown 文件中的远程图片以避免累积布局偏移
     imageHostURL: 'image.radishzz.cc',
-    // custom google analytics js
-    // for users who route analytics javascript to a customized domain
-    // see https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
+    // 自定义谷歌分析 js
+    // 适用于将分析 javascript 路由到自定义域名的用户
+    // 参见 https://gist.github.com/xiaopc/0602f06ca465d76bd9efd3dda9393738
     customGoogleAnalyticsJS: '',
-    // custom umami analytics js
-    // for users who deploy umami on their own, or route analytics javascript to a customized domain
-    // see https://github.com/umami-software/umami/discussions/1026
+    // 自定义 umami 分析 js
+    // 适用于自行部署 umami 或将分析 javascript 路由到自定义域名的用户
+    // 参见 https://github.com/umami-software/umami/discussions/1026
     customUmamiAnalyticsJS: 'https://js.radishzz.cc/jquery.min.js',
   },
-  // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
+  // 预加载设置 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 结束
 }
 
 export default themeConfig
