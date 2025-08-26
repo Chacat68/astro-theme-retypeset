@@ -29,23 +29,23 @@ export const themeConfig: ThemeConfig = {
       // 主要颜色
       // 用于标题、悬停等
       // oklch 颜色选择器：https://oklch.com/
-      primary: 'oklch(25% 0.005 298)',
+      primary: 'oklch(0.24 0.0172 280.05)',
       // 次要颜色
       // 用于文章文本
-      secondary: 'oklch(40% 0.005 298)',
+      secondary: 'oklch(0.40 0.0172 280.05)',
       // 背景颜色
-      background: 'oklch(96% 0.005 298)',
+      background: 'oklch(0.98 0.0172 280.05)',
       // 高亮颜色
       // 用于导航栏、选中文本等
       highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
     },
     dark: {
       // 主要颜色
-      primary: 'oklch(92% 0.005 298)',
+      primary: 'oklch(0.92 0.0172 280.05)',
       // 次要颜色
-      secondary: 'oklch(77% 0.005 298)',
+      secondary: 'oklch(0.79 0.0172 280.05)',
       // 背景颜色
-      background: 'oklch(22% 0.005 298)',
+      background: 'oklch(0.24 0.0172 280.05)',
       // 高亮颜色
       highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
     },
