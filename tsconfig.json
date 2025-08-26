@@ -14,5 +14,8 @@
     "uno.config.ts",
     "astro.config.ts"
   ],
-  "exclude": ["dist"]
+  "exclude": [
+    "dist",
+    "src/plugins/**/*.mjs"
+  ]
 }
