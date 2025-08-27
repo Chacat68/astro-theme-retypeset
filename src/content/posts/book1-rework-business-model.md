@@ -21,7 +21,7 @@ draft: false
 
 ### 《重来》
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20201011184505.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20201011184505.jpg) -->
 
 大多数的企业管理的书籍都会告诉你：制定商业计划、分析竞争形势、寻找投资人等等。如果你要找的是那样的书，那么把这本书放回书架吧。
 
@@ -33,7 +33,7 @@ draft: false
 
 ### 《重来2》
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20201011184525.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20201011184525.jpg) -->
 
 “不再需要办公室”，这不仅仅是未来才有的事——它已经发生了。现在，轮到你迈开脚步，跟上时代的步伐了。
 
@@ -49,7 +49,7 @@ draft: false
 
 ### 《重来3》
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20201011193834.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20201011193834.jpg) -->
 
 在叫嚣着“颠覆世界”“商场如战场”的这个时代，好像人人都在想着改变世界—这为他们每天晚上9点开会、周末加班赶工和让整个公司一起加班找了个好理由。
 

@@ -29,7 +29,7 @@ Ollama的使用非常简单，只需几个步骤即可：
 1. 安装Ollama，访问Ollama官方网站：https://ollama.com/。
 2. 下载要使用的语言模型。（在终端上运行下表Download列的命令）
     
-    ![https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot 2024-03-09 at 19.31.22.png](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104001833151.png?imageSlim)
+    <!-- ![https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot 2024-03-09 at 19.31.22.png](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104001833151.png?imageSlim) -->
     
 3. 使用Ollama API加载语言模型。
 4. 调用语言模型API进行预测。
@@ -135,7 +135,7 @@ LLMEval是由复旦大学NLP实验室推出的大模型评测基准，最新的L
 
 对话效果对比：
 
-![https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot 2024-03-09 at 20.03.28.png](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002031815.png?imageSlim)
+<!-- ![ChatGPT界面截图](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002031815.png?imageSlim) -->
 
 ## 支持的客户端
 
@@ -147,25 +147,25 @@ Github地址：
 
 https://github.com/kangfenmao/cherry-studio
 
-![https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-11-01%20at%2015.35.38@2x.png](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002108886.png?imageSlim)
+<!-- ![https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-11-01%20at%2015.35.38@2x.png](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002108886.png?imageSlim) -->
 
 ### Opencat
 
 在 2.8 版本里加入对本地的模型的支持
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002213532.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002213532.png?imageSlim) -->
 
 前往设置里配置URL [http://localhost:11434](http://localhost:11434/)
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002250447.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002250447.png?imageSlim) -->
 
 显示验证成功即可
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002316462.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002316462.png?imageSlim) -->
 
 在对话界面上点击头像选择模型即可：
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002338271.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002338271.png?imageSlim) -->
 
 ### NotesOllama
 
@@ -175,9 +175,9 @@ https://github.com/andersrex/notesollama
 
 选择笔记本中要交互的文本，在笔记的右下角会出现交互的菜单
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002417153.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002417153.png?imageSlim) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002440416.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002440416.png?imageSlim) -->
 
 ### Lobe Chat
 
@@ -191,14 +191,14 @@ https://github.com/lobehub/lobe-chat
 
 界面UI预览：
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002510891.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002510891.png?imageSlim) -->
 
 ### BMO Chatbot
 
 > Obsidian的AI插件，使用 Ollama、LM Studio、Anthropic、Google Gemini、Mistral AI、OpenAI 等大型语言模型（LLM）为Obsidian生成和集思广益时，记录你的想法。
 > 
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002535913.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002535913.png?imageSlim) -->
 
 Github地址：
 
@@ -206,6 +206,6 @@ https://github.com/longy2k/obsidian-bmo-chatbot
 
 也可以在Obsidian的插件商店里搜索安装
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002557076.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002557076.png?imageSlim) -->
 
 > 💡 感谢您的观看！欢迎分享文章，或是来信与我交流。

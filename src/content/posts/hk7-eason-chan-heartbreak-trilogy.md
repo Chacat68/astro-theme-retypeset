@@ -13,7 +13,7 @@ draft: false
 
 > 港乐集：细数那些光影交织的粤语歌年代，记录心中难忘的旋律，分享或流行或小众的港乐故事。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/2025-02-01-12-29-08.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/2025-02-01-12-29-08.png?imageSlim) -->
 
 ## 前言
 

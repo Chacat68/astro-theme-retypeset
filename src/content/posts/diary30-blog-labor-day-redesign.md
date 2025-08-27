@@ -23,15 +23,15 @@ draft: false
 
 我选择使用 Vercel 来部署我的网站。整个部署流程相当简洁：首先 Fork `fuwari` 项目，然后在 Vercel 中关联你的 GitHub 账号，即可启动部署。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234237550.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234237550.png?imageSlim) -->
 
 接着，访问 Vercel 控制台，找到对应的项目，点击 "Deploy" 按钮开始部署过程。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234327982.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234327982.png?imageSlim) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234432832.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234432832.png?imageSlim) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234451092.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234451092.png?imageSlim) -->
 
 部署成功后，你可以在 Vercel 控制台中查看到网站的访问地址。
 
@@ -41,29 +41,29 @@ draft: false
 
 ### 项目页面
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234738212.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250502234738212.png?imageSlim) -->
 
 我将原主题中项目展示的图片、标题和描述功能迁移至新主题，并借鉴了 `gyoza` 主题归档页面的时间滚动样式，应用在新的项目页面。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503025806690.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503025806690.png?imageSlim) -->
 
 ### 友链页面
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503030027875.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503030027875.png?imageSlim) -->
 
 `fuwari` 主题本身不包含友链功能。我将之前主题的友链页面迁移了过来，并额外添加了代码复制功能，方便复制代码片段。
 
 ### 精简文章列表
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503030217022.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503030217022.png?imageSlim) -->
 
 原 `fuwari` 主题的文章列表会显示分类、标签、发布时间等元信息。为了保持列表的简洁性，我选择隐藏了这些元素。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503030317637.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503030317637.png?imageSlim) -->
 
 ### 首页封面
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503135534706.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250503135534706.png?imageSlim) -->
 
 首页的封面图是之前用 midjourney 生成的，灵感是中国色的水墨山水画。
 

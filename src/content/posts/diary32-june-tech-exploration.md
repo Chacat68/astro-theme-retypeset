@@ -19,7 +19,7 @@ draft: false
 
 ## 开源视频网站
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250602134914997.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250602134914997.png?imageSlim) -->
 
 31号那天偶然发现一个设计精巧的开源视频聚合平台，立刻激起了我的兴趣。在GitHub上fork项目后，借助Vercel的一键部署功能，从零到上线仅耗时30分钟，非常便捷。
 
@@ -31,11 +31,11 @@ draft: false
 
 魔搭社区的核心优势在于其极简的部署流程，用户只需几个简单步骤即可完成一个完整MCP环境的搭建，大幅降低了技术门槛。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250602160056648.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250602160056648.png?imageSlim) -->
 
 当前MCP生态仍处于发展初期，存在查询效率偏低、应用质量参差不齐等问题。但其技术潜力不容小觑，例如通过整合高德地图、网页数据等多源MCP进行联合查询，所得结果的全面性和准确性已明显优于传统网页搜索。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250602160339890.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250602160339890.png?imageSlim) -->
 
 从投入产出比来看，采用MCP技术节省的时间成本，已完全能够覆盖前期学习曲线带来的时间投入。
 

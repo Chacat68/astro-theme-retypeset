@@ -39,7 +39,7 @@ Notion AI适用于各种不同的用户群体，包括学生、职场人士、�
 
 文字润色分为两个主要的功能： 提高写作水平、 修正拼写和语法错误
 
-![Notion AI](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202303161427919.png)
+<!-- ![Notion AI](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202303161427919.png) -->
 
 我习惯于使用语音输入，口语化地表达并写出一段草稿。草稿的措辞一般不太准确，但这并不影响，这样能够非常快速地得到一段文字内容，再使用上述的两个功能，进行文字润色修改。
 
@@ -68,7 +68,7 @@ Notion AI适用于各种不同的用户群体，包括学生、职场人士、�
 
 使用AI可以把段落或者是全部翻译成其他语言，现支持：
 
-![zhOyZB](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/zhOyZB.png)
+<!-- ![zhOyZB](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/zhOyZB.png) -->
 
 
 ## 博主推荐

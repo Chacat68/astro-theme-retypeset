@@ -31,15 +31,15 @@ draft: false
 
 - 玩家主城
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/JF0xnb.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/JF0xnb.png) -->
 
 - 世界
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/1CYNSn.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/1CYNSn.png) -->
 
 - 天下
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/uJvjeg.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/uJvjeg.png) -->
 
 基于上述层级，策划需要涉及每个层级能出现的单位（包括UI、特效等）
 
@@ -103,7 +103,7 @@ LOD是这个问题的一种解法，让一个物体在相机距离不同的情�
 
 当摄像机往上移动时，观察到的视角内容越来越多，根据层级，需要制定不同的显示规则，处理模型和UI，控制玩家在画面里看到的单位信息。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/1P42qR.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/1P42qR.png) -->
 
 再根据每个单位罗列出行为，给每个行为制定显示规则，这套规则需要考虑到通用性和管理成本，让规则保持一致，尽量减少特殊处理，不然后期维护成本大增。
 
@@ -117,11 +117,11 @@ LOD是这个问题的一种解法，让一个物体在相机距离不同的情�
 
 策划在此基础上，梳理罗列出基于LOD不同层级物件，制定好显示的优先级。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/Vjuhv6.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/Vjuhv6.png) -->
 
 每个物件分配层级和高度，再细化到物件上的子元素，例如UI、特效等效果。和TA（程序）美术一起制定渲染队列的规则，划分层级，分配高度
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/T9SPBO.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/T9SPBO.png) -->
 
 把大世界上全部物件罗列出来，单一物件定好显示层级和高度，在玩法单位上，会挂载多个对象，例如部队、UI、特效等等，如全局管理策略不合适，需要针对某个单位制定单独的显示规则
 

@@ -15,7 +15,7 @@ draft: false
 
 最近因为[Brackeys的教程](https://youtu.be/LOhfqjmasi0?si=CJVbxxd2kuC231Ct)，同时也在做技术调研，就跟着教程把游戏原型给做了出来。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/nyFavE.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/nyFavE.png) -->
 
 Github地址：（上传有问题，后续补充链接）
 
@@ -25,27 +25,27 @@ Github地址：（上传有问题，后续补充链接）
 
 每个节点等于是游戏内的一个模块，也可以理解成一个小功能，例如：捡金币，整个逻辑可以单独用一个节点来实现，在金币节点下，可以捆绑动画，代码等内容
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.24.56.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.24.56.png) -->
 
 ### Player 玩家
 
 实现了玩家控制的角色小人，包含它的动作（行走、跳跃）、动画等逻辑，基本用编辑器实现差不多，一些行为逻辑代码改一下自带的GDSerint脚本即可
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.33.44.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.33.44.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.34.10.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.34.10.png) -->
 
 ### 场景World building
 
 使用地图编辑器，导入了美术资产，核心操作是基于瓦片地图的格子，整体编辑体验易上手。有一个小创新是可以直接在格子上赋予碰撞逻辑，省下单独编辑碰撞层的麻烦。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.31.36.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.31.36.png) -->
 
 ### 敌人 Enemy
 
 实现了一个小怪移动、碰撞和动画
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.47.45.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.47.45.png) -->
 
 ### 行为逻辑
 
@@ -53,23 +53,23 @@ Github地址：（上传有问题，后续补充链接）
 
 制作了一个可来回移动的逻辑节点，应用在怪物和场景移动平台上
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.38.41.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.38.41.png) -->
 
 ### 金币获取
 
 制作了金币常态动画
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.40.48.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.40.48.png) -->
 
 用动画工具巧妙实现消失动画和音效的逻辑，在代码里简单引用即可使用。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.41.16.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.41.16.png) -->
 
 ### 角色死亡
 
 实现了角色掉出边界、碰到怪物的死亡逻辑，本质是用碰撞盒去实现，第一集的教程里还没教死亡动画，但是美术资产里有资源，可以自主发挥实现。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.44.41.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-05-24%20at%2023.44.41.png) -->
 
 还有打包导出、音乐等功能大家在教程里自行探索，本文不再赘述。
 

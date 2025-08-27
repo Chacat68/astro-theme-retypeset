@@ -11,7 +11,7 @@ draft: false
 
 > 本站 RSS地址已更新，麻烦读者朋友们重新订阅一次喔！
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104173015759.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104173015759.png?imageSlim) -->
 
 > 我选择追求简单的生活，享受着与亲朋好友相聚的时光，品味着美食的滋味，专注于自己真正重要的事情。
 

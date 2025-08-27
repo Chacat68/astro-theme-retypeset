@@ -19,7 +19,7 @@ draft: false
 
 ## 心态变化
 
-![BA29B2DC-C5E5-48F6-82DB-B27DD7A62557_1_105_c.jpeg](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250421003532093.jpeg?imageSlim)
+<!-- ![BA29B2DC-C5E5-48F6-82DB-B27DD7A62557_1_105_c.jpeg](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250421003532093.jpeg?imageSlim) -->
 
 最近感觉自己的心里的“我执”变少了，每天就想着怎么把自己照顾好，把该做的事情整理清楚。减少和自己无关的链接，简单的小生活回来了。
 
@@ -27,7 +27,7 @@ draft: false
 
 ## 生活秩序在重建
 
-![84B295F1-75E4-4D30-931F-85107EF63F03_1_105_c.jpeg](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250421003501899.jpeg?imageSlim)
+<!-- ![84B295F1-75E4-4D30-931F-85107EF63F03_1_105_c.jpeg](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250421003501899.jpeg?imageSlim) -->
 
 过了 34 岁的生日，正式迈入35 岁中年生活，之前看的《中年之路》里描述的状况都在慢慢发生，身体、心灵都像换了档，借这个时机，故意把生活节奏放慢点，多留点时间观察和记录。
 

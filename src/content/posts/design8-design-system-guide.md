@@ -21,13 +21,13 @@ draft: false
 
 “故事板”概念在 1930 年由迪士尼提出并使用，被广泛应用在动画的创作流程里。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/7EztNP.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/7EztNP.png) -->
 
 用故事板的形式，贯穿整个动画的创作流程，并由专业的“故事智囊团”来对故事的模型、结构、人物设计、情感点等等内容评分，最终成品动画经过多轮专业验证，达到迪士尼的高品质。
 
 故事板的好处是通过可视化编排的方式，让创作者脑海里的内容得以用画面来表达出来。这样的故事板在创作的流程里，是非常珍贵的确定性内容。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/0vYb0E.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/0vYb0E.png) -->
 
 我在宫崎骏导演的[幕后纪录片](https://www.bilibili.com/bangumi/play/ss33610)里也看到类似的片段，通过确定的单帧画面，把整个故事串联起来。后期只要调整画面的顺序、快慢，即可调整影片的节奏。
 
@@ -41,17 +41,17 @@ draft: false
 
 而迪士尼的故事板在这个阶段也发挥了重要的作用，它能帮助创作团队根据故事发展去研究文化、历史、科学、艺术等内容，让整个故事世界的创作细节更接近真实的生活。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/I7TfBF.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/I7TfBF.png) -->
 
 创作故事板
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/hLCXVo.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/hLCXVo.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/eaBepY.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/eaBepY.png) -->
 
 《冰雪奇缘2》采风剪影
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/Z7l8fh.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/Z7l8fh.png) -->
 
 《寻龙传说》采风实录
 
@@ -59,9 +59,9 @@ draft: false
 
 负责故事的编剧、剪辑师和艺术家们会努力把导演脑海中的故事用画面的形式呈现在故事板上，他们会考虑故事背景、情节、角色等因素，还会针对角色进行表情、肢体动作、服装等细节设计。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CZoyd2.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CZoyd2.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/bZhP81.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/bZhP81.png) -->
 
 《寻龙传说》故事板
 
@@ -69,13 +69,13 @@ draft: false
 
 艺术家会根据故事的剧情发展，在剧本的基础上，设计出分镜图，开始编排故事的总体走向。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/1jUOsi.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/1jUOsi.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/RtjtL4.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/RtjtL4.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/zpTVqZ.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/zpTVqZ.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/KMviXh.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/KMviXh.png) -->
 
 这套分镜故事板做法，可以在前期就把角色、场景、灯光等元素具象化表达出来，技术和美术团队在前期看到这些内容，能够在后续的流程中，更准确去评估制作方案。
 
@@ -83,11 +83,11 @@ draft: false
 
 在分镜设计的基础上，艺术家会进一步根据扩展画面的细节，会涉及到画面的颜色、材质、特效等，以《冰雪奇缘2》举例，在这张设计图里，已经可以看出角色的发色、服装、整体色调等设计，包括通过透明材质来表达冰雪的效果。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/OwYPjN.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/OwYPjN.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/qTU0Vu.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/qTU0Vu.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/mG9zoE.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/mG9zoE.png) -->
 
 《寻龙传说》视觉开发
 
@@ -99,21 +99,21 @@ draft: false
 
 迪士尼配音和剪辑团队根据Pre-production故事线动画，找到合适的配音演员，把故事里的背景音乐，角色对白等制作出来。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/LQoulR.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/LQoulR.png) -->
 
 ### 资产创作
 
 同时，在完成视觉设计之后，艺术家们会根据设计好的内容制作出角色和场景。迪士尼最近几年开始制作3D动画，过程中就包含建模、动作、材质纹理、毛发衣物等内容的制作。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/6LhOyg.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/6LhOyg.png) -->
 
 建模3视图
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/T9uCpZ.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/T9uCpZ.png) -->
 
 服装材质设计
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/bekSIN.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/bekSIN.png) -->
 
 头发和脸部设计
 
@@ -125,17 +125,17 @@ draft: false
 
 在后期制作环节，需要把故事板进行3D化，把角色和场景模型放到空间里，控制摄像机对故事板里的每一帧进行还原。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/TJVib8.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/TJVib8.png) -->
 
 影视制作里有Pre-production阶段，创作人员提前已经把内容迭代出来，到了后期制作阶段，这些内容基本已经达到成片的水准。
 
 后期制作是资产的最终整合阶段，当把所有的模型、特效、摄像机角度、灯光等都设计好，烘托场景的氛围，调度角色的动作来验证故事是否真的打动人！加上音乐、对白，剪辑调整节奏，并达到最好的效果。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/xnzOaU.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/xnzOaU.png) -->
 
 ▲ 无反射滤光效果
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/nuWwsv.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/nuWwsv.png) -->
 
 ▲ 反射移除以展示海水的颜色
 
@@ -143,15 +143,15 @@ draft: false
 
 2011年，作为Airbnb联合创始人的Brian Chesky在圣诞假期阅读《Walt Disney》传记时，偶然间发现了迪士尼的故事板工具，随后想到了将它应用在Airbnb用户体验优化当中，作为了解用户体验的一种方式。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/9cc5b3de4b657cd4a21d00304f42a485.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/9cc5b3de4b657cd4a21d00304f42a485.png) -->
 
 Brian在内部创建了名为“白雪公主”的项目，并聘请了皮克斯的动画师Nick Sung来落地正式的故事板流程，包括房东流程、用户流程以及招募流程，这些故事板流程在后来被用来指导Airbnb的营销、广告和用户服务。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/aeaf40f11f97cb33a76438383b0b48e8.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/aeaf40f11f97cb33a76438383b0b48e8.png) -->
 
 这位被塑造出来的人物Mike（用户），Airbnb创建了一个专属故事板（如今被称为用户地图，Customer Journey）来模拟他和产品之间的一系列交互以解决具体需求，还原用户体验流程中的关键场景、行为、情绪以及列举出可优化的地方，指导之后的产品原型设计。除了在具体用户体验当中的优化，用户体验本身也成为了Airbnb的长期目标和文化。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/080040385a974dbd29ec444d8e6a29bb.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/080040385a974dbd29ec444d8e6a29bb.png) -->
 
 最后，学会讲故事不仅仅局限于做具体的动画或者产品，也是每个人可以用来提升自我表达的能力，用来和外界保持同频的方式。
 
@@ -161,7 +161,7 @@ Brian在内部创建了名为“白雪公主”的项目，并聘请了皮克斯
 
 更好的方式应该是记录下来，让它帮助我们改善思考的方式，创作出更好的内容。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/5Qna6L.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/5Qna6L.png) -->
 
 ## 扩展阅读
 

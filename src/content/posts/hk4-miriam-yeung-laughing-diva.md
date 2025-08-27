@@ -25,7 +25,7 @@ draft: false
 
 这首歌是我对杨小姐的第一印象。当时她给人以阳光的少女形象，而我对专辑封面上这个很爱笑的女孩印象深刻。包括后来在MV中展现的那种青春少女的气息，就宛如我的同龄同学一样。
 
-![少女的祈祷封面](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302281259170.png)
+<!-- ![少女的祈祷封面](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302281259170.png) -->
 
 <iframe width="750" height="420" src="https://www.youtube.com/embed/CvKvXNiXQZc?si=uS6vo5_3vyTqqXQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

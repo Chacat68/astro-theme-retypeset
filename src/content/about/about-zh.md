@@ -32,7 +32,7 @@ lang: zh
 
 #### 写出穿越时间的文字
 
-![DSC03299](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/DSC03299.jpg)
+<!-- ![DSC03299](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/DSC03299.jpg) -->
 
 博客中的文字始终从我的视角出发，难免主观片面。对读者而言，这些都只是个人观点，仅供参考。我们应该更多关注客观事实，进行全面观察和深入思考，并用文字忠实记录。
 
@@ -42,7 +42,7 @@ lang: zh
 
 #### 表达自由且克制
 
-![DSC04066](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/DSC04066.jpg)
+<!-- ![DSC04066](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/DSC04066.jpg) -->
 
 始终保持对"自由"的向往，对世界充满好奇。从自己的视角出发，稳定而克制地探索世界的边界，总结其中的规律，寻找那些穿越历史周期的不变因素。
 
@@ -52,7 +52,7 @@ lang: zh
 
 #### 记录简单的生活
 
-![DSC03225](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/DSC03225.jpg)
+<!-- ![DSC03225](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/DSC03225.jpg) -->
 
 追求生活的简单，减少不必要的决策消耗，将更多精力投入到创作中。
 

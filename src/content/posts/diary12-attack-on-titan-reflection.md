@@ -13,7 +13,7 @@ draft: false
 
 > 趁着最终季的更新，花了一天时间，一口气看完了《进击的巨人》
 
-![进击的巨人](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/f1beTf.jpg)
+<!-- ![进击的巨人](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/f1beTf.jpg) -->
 
 ## 墙与谎言
 

@@ -47,12 +47,12 @@ Steam上的游戏能在全世界范围内发行销售，但是由于各地政府
 
 单击账户，找到“账户明细”，单击“新增资金到Steam钱包”，就会跳转到钱包支付页面
 
-![CleanShot2024-12-03at23.11.40@2x](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-12-03%20at%2023.11.40@2x.png)
+<!-- ![CleanShot2024-12-03at23.11.40@2x](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-12-03%20at%2023.11.40@2x.png) -->
 
 
 钱包支付页面如下：
 
-![CleanShot2024-12-03at23.12.42@2x](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-12-03%20at%2023.12.42@2x.png)
+<!-- ![CleanShot2024-12-03at23.12.42@2x](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-12-03%20at%2023.12.42@2x.png) -->
 
 至于礼品卡国内可以搜索某宝渠道，海外就要找下各地区的销售渠道了。
 

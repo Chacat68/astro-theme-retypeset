@@ -63,11 +63,11 @@ draft: false
 
 基于文件夹下的类似素材推荐算法特别好用，方便收集类似题材的素材，而不用去自己搜索整个网站。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041048.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041048.jpg) -->
 
 更多点子就是基于算法的推荐，多搜集同类的图，算法训练次数更多，推荐就会更加准确
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041047.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041047.jpg) -->
 
 - Pinterrest 需要科学上网，花瓣收到政策影响，会不定期关闭，这些都是需要知悉和规避的风险。
 
@@ -75,13 +75,13 @@ draft: false
 
 [unsplash](https://unsplash.com/)
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041052.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041052.jpg) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041049.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041049.jpg) -->
 
 unsplash会基于你整理的图集，推荐相关的图集，会非常方便找到关联的素材。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041046.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041046.jpg) -->
 
 上述介绍的这些网站，会有分组功能，根据自我的喜好，把素材收集进行初步的归类。
 
@@ -93,11 +93,11 @@ unsplash会基于你整理的图集，推荐相关的图集，会非常方便找
 
 建议使用Eagle，支持不同层级的树结构分类，可以有效的把图片分到各个目录下。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041045.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041045.jpg) -->
 
 选择任意目录可以查看到该目录下的所有素材预览图。还可以对具体某一张图进行标记，说明。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041051.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041051.jpg) -->
 
 - 可以使用Eagle的批量导入，把Pinterest、花瓣里分好的素材，批量保存到自己所要的网盘里。其他类的素材也是可以使用类似的技巧批量搜集。
 
@@ -109,11 +109,11 @@ unsplash会基于你整理的图集，推荐相关的图集，会非常方便找
 
 素材以标题和标签两个文字作为检索的关键字，定义搜集到的素材属于什么类型，当搜索同类的素材之后，就可以无脑放入指定的素材库中。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041044.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041044.jpg) -->
 
 非常喜欢Eagle的智能标签功能，算法会罗列出树目录的名称，本级和上级的名称推荐。在非常成熟的树状结构中，这个功能就非常好用了，再基于基础标签下，填写新的标签，会使得标记工作量一下子锐减。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041050.jpg)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20200225041050.jpg) -->
 
 Eagle里选中一张图，也可以对这张图进行更细致的编辑，例如：添加新的标签，添加注释，移动分类，查看图片规格等等。根据自身的需求，更加细致地去管理素材库。
 

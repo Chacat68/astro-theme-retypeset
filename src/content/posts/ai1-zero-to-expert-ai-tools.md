@@ -57,12 +57,12 @@ ChatGPT 助理
 > 我要创建一个iOS开发项目，第1步的代码应该怎么创建
 > 
 
-![iOS开发项目创建示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282158717.png)
+<!-- ![iOS开发项目创建示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282158717.png) -->
 
 > 这是一个倒计时类型的APP，我要怎么写逻辑代码
 > 
 
-![倒计时APP逻辑代码示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282200636.png)
+<!-- ![倒计时APP逻辑代码示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282200636.png) -->
 
 ## 二、Notion与AI
 
@@ -101,7 +101,7 @@ MidJourney是一款基于人工智能算法的生成式工具，它能根据用�
 
 使用近期更新的v4版本模型，可以绘制出更多样的风格图片，下图来源于官方的参考：
 
-![MidJourney v4版本模型](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282313956.png)
+<!-- ![MidJourney v4版本模型](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282313956.png) -->
 
 ### 3.2 使用体验
 
@@ -113,11 +113,11 @@ MidJourney是一款基于人工智能算法的生成式工具，它能根据用�
 > 在MidJourney Bot聊天窗口输入斜杠/ 符号，选择/imagine prompt：关键词 +风格 +参数
 > 
 
-![MidJourney 创作示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282324801.png)
+<!-- ![MidJourney 创作示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282324801.png) -->
 
 每次你创作内容时，机器人都会以4个预览图的形式帮你呈现。你可以选择任意的图进行细化，也可以基于这些图进行细节的修改。
 
-![MidJourney 创作示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282327529.png) 
+<!-- ![MidJourney 创作示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282327529.png) --> 
 
 - U是继续细化当前图片，V是基于这张图片进行细节的变化
 

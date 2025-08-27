@@ -43,7 +43,7 @@ https://github.com/comfyanonymous/ComfyUI
         - cd ComfyUI
         - python [main.py](http://main.py/)
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2015.56.10@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2015.56.10@2x.png) -->
 
 [更多平台安装细节](https://docs.comfy.org/get_started/manual_install)
 
@@ -65,15 +65,15 @@ https://github.com/6174/comflowy
 
 ### 模型管理
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-12%20at%2009.09.43.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-12%20at%2009.09.43.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-12%20at%2009.19.30.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-12%20at%2009.19.30.png) -->
 
 客户端提供直接下载管理模型的功能，用户可通过官方渠道或Civitai进行下载。下载完成后，模型会保存在本地的指定文件夹中。
 
 ### 插件管理
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-12%20at%2009.30.00.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-12%20at%2009.30.00.png) -->
 
 客户端提供插件下载，用户可通过社区插件渠道，直接搜索下载即可。有需要更新的插件，右上角会显示更新按钮。
 
@@ -97,7 +97,7 @@ https://www.comflowy.com/zh-CN/preparation-for-study/install-cloud
 
 ComfyUI 比较方便一个点就是可以直接使用其他人创建的流程，直接拖拽到UI范围内或是点击载入按钮即可使用。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2015.54.48@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2015.54.48@2x.png) -->
 
 ## 工作流社区
 
@@ -145,7 +145,7 @@ LoRA：滤镜模型，在原始模型的基础上，对生成内容做风格化�
 
 另一种安装方法，装上ComfyUl-Manager插件，在管理器界面，可以直接安装。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-27%20at%2017.08.27@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-27%20at%2017.08.27@2x.png) -->
 
 ## 插件
 
@@ -155,23 +155,23 @@ LoRA：滤镜模型，在原始模型的基础上，对生成内容做风格化�
 
 ### ComfyUI管理器
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.12.15@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.12.15@2x.png) -->
 
 ### 节点管理
 
 这是一个节点商店，在搜索框直接能搜索到想要的插件。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.14.44@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.14.44@2x.png) -->
 
 ### 安装缺失节点
 
 如果下载别人分享的工作流，遇到了缺失的节点，拖拽到工作流里会弹出这窗口。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.19.01@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.19.01@2x.png) -->
 
 通过**ComfyUI管理器**上的**安装缺失节点**按钮，会把所有缺失的节点列出来。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.19.45@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-10-03%20at%2016.19.45@2x.png) -->
 
 ## 结束
 

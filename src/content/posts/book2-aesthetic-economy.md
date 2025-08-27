@@ -13,7 +13,7 @@ draft: false
 
 >《美学的经济》是詹伟雄老师对美学、经济学和哲学等多个学科领域进行交叉思考后的一本探讨美学与经济关系的书籍。该书提出了"美学的经济"这一概念，认为美学是一种经济学上的资源，同时，美学也可以给经济学带来很多的启示和影响。
 
-![odSGxA](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/odSGxA.png)
+<!-- ![odSGxA](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/odSGxA.png) -->
 
 
 詹老师通过深入分析美学和经济学的基本原理和特点，探讨了它们之间的联系和交叉点，并结合大量的案例和实证研究，说明了美学在经济学中的应用和作用。

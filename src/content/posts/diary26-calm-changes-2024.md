@@ -11,7 +11,7 @@ draft: false
 
 > 本站 RSS地址已更新，麻烦读者朋友们重新订阅一次喔！
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104172842744.png?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104172842744.png?imageSlim) -->
 
 今年的整体感受：自由、平静和剧变，自己、家人、周遭社会都在剧烈变化。
 

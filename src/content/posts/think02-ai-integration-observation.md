@@ -37,7 +37,7 @@ draft: false
 
 如果要达到类似代码补全的效果，AI需要更深入理解语义，才能提供更具价值的建议。但现阶段，它还做不到。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-25%20at%2018.04.35@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-25%20at%2018.04.35@2x.png) -->
 
 （上图是使用Obsidian的BMO插件，可以配置API使用云端大模型）
 
@@ -50,7 +50,7 @@ draft: false
 好处：快捷，不受网络影响
 坏处：某些翻译不够精准，毕竟模型规模才7B
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-25%20at%2018.09.58@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-25%20at%2018.09.58@2x.png) -->
 
 （上图是使用Ollama的qwen2.5模型翻译）
 
@@ -60,9 +60,9 @@ draft: false
 
 目前云端模型的服务商通常提供网页UI和API，针对普罗大众和技术开发者。经过一年的发展，这些厂商们开始通过应用的方式，把AI功能嵌入设备里，如ChatGPT的Mac客户端，只需按下快捷键即可呼出小对话框并获取答案。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-26%20at%2006.20.24@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-26%20at%2006.20.24@2x.png) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-25%20at%2018.00.11@2x.png)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot%202024-09-25%20at%2018.00.11@2x.png) -->
 
 （上图是ChatGPT的Mac客户端）
 

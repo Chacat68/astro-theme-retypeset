@@ -18,7 +18,7 @@ category: '人工智能'
 
 ## Cherry Studio核心特性
 
-![Cherry Studio界面](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250611001314160.png?imageSlim)
+<!-- ![Cherry Studio界面](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250611001314160.png?imageSlim) -->
 
 ### 多样化的LLM提供商支持
 
@@ -38,7 +38,7 @@ Cherry Studio提供了超过300个预配置的AI助手，覆盖了从编程开�
 
 ## MCP协议：为大模型插上翅膀
 
-![MCP服务示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250611001352442.png?imageSlim)
+<!-- ![MCP服务示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250611001352442.png?imageSlim) -->
 
 最近，MCP(Model Context Protocol)协议在AI领域异常火热。这是一种由Anthropic公司推出的接口协议，它就像AI领域的"USB接口"，将各种数据源和工具连接到AI模型，实现了"即插即用"的便捷开发体验。
 
@@ -66,7 +66,7 @@ Cherry Studio还集成了许多实用工具，进一步提升了用户体验：
 
 ## 使用体验与总结
 
-![Cherry Studio主题](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250611001429813.png?imageSlim)
+<!-- ![Cherry Studio主题](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250611001429813.png?imageSlim) -->
 
 使用Cherry Studio已有一周时间，它的稳定性和流畅度给我留下了深刻印象。作为一款开箱即用的工具，它不需要复杂的环境配置，安装后即可使用，大大降低了使用门槛。
 

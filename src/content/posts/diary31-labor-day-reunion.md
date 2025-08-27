@@ -21,11 +21,11 @@ draft: false
 
 回到老广，第一个重拾的习惯便是约上老友一起喝茶。兴致所至，便相约出门，一起去茶楼里，点上几样喜欢的点心和小菜，围坐一桌，闲话家常。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506061436583.jpeg?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506061436583.jpeg?imageSlim) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506062513008.jpeg?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506062513008.jpeg?imageSlim) -->
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506062528195.jpeg?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506062528195.jpeg?imageSlim) -->
 
 家门口这家茶楼，菜品虽然平平无奇，但胜在全天候营业，无论何时想念，都能寻得一席之地。粥和肠粉是永远不会让人失望的选择，这次还初尝了鱼皮，那酥脆的口感和鲜美的滋味，着实令人惊喜。
 
@@ -33,11 +33,11 @@ draft: false
 
 隔了几天，朋友又发来邀约，这次想去小酌几杯。我们相约去了江边的酒吧，谁知刚到目的地，天空突然变脸，倾盆大雨如约而至。我们只好匆匆躲进码头边上一家不起眼的餐吧，没想到这偶然的选择却带来了意外的惊喜。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506063007246.jpeg?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506063007246.jpeg?imageSlim) -->
 
 我们挑了一个靠边的位置，聊着聊着雨越来越大，餐厅把格挡的帘子放了下来，隔着帘子能看到下雨的江面。风雨吹散了夏日的闷热，点了几道小菜，开始举杯共饮。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506063123906.jpeg?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506063123906.jpeg?imageSlim) -->
 
 几杯小酒下肚，节前紧绷的神经逐渐舒缓，大家各自聊起各自的生活，吐槽工作上的烦恼，免不了分享起对环境的看法，聊起各自生活中做了一些改变。
 
@@ -47,11 +47,11 @@ draft: false
 
 某个平常的夜晚，我正在家中与AI生成的代码bug奋战，突然收到老友的消息。放下手头的工作，打车前往他家楼下，我们一起走到附近的一家老字号，打算来一顿地道的潮汕砂锅粥，慰藉疲惫的身心。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506064339106.jpeg?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506064339106.jpeg?imageSlim) -->
 
 点菜时，老板热情地推荐了他家的招牌菜【油炸鲜鱿】。尝了一口，那外酥里嫩的口感，鲜美的肉质，瞬间征服了味蕾，让人回味无穷。
 
-![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506064459320.jpeg?imageSlim)
+<!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250506064459320.jpeg?imageSlim) -->
 
 随后，海鲜粥的鲜香、炒芥兰的清脆也相继抚慰了我们的胃。话题从生活的琐碎，到工作的挑战，再到共同吐槽的生活烦恼，无所不谈。饭毕，我们决定散步消食，沿着熟悉又陌生的街道漫步回他家楼下。
 

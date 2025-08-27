@@ -27,7 +27,7 @@ draft: false
 
 下图是具体的对话内容：
 
-![对话内容](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302242253084.png)
+<!-- ![对话内容](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302242253084.png) -->
 
 我个人比较期待微软旗下的 New Bing，它相当于联网版本的 ChatGPT，虽然我没有获得测试资格，无法进行深入的体验，在推友们的体验中，它比 ChatGPT 更加强大。但最近的消息显示，微软已经削减了它的功能，限制了回答问题的数量，整体感觉像智能程度下降许多。
 
@@ -39,7 +39,7 @@ Notion AI为撰写文章提供了许多功能，如文章大纲撰写、段落�
 
 Notion的AI是我目前使用的笔记应用中，用户体验最好的。只要对着空白行轻敲空格键即可唤出AI
 
-![Notion AI](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302251016722.png)
+<!-- ![Notion AI](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302251016722.png) -->
 
 3、插画配图（Midjourney）
 
