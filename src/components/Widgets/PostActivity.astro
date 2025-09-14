@@ -130,25 +130,33 @@ while (tempDate <= endDate) {
     color: #abb2bf;
     margin-bottom: 2rem;
   }
+  
   .activity-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
+  
   .activity-header h2 {
     font-size: 1.25rem;
     font-weight: 600;
     color: #e6e6e6;
   }
+  
   .activity-stats {
     font-size: 0.875rem;
   }
+  
   .activity-grid-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    overflow-x: auto;
   }
+  
   .activity-grid {
     display: grid;
     grid-template-areas:
@@ -156,7 +164,9 @@ while (tempDate <= endDate) {
       "days cells";
     grid-template-columns: auto 1fr;
     gap: 4px;
+    min-width: fit-content;
   }
+  
   .months {
     grid-area: months;
     display: grid;
@@ -165,6 +175,7 @@ while (tempDate <= endDate) {
     margin-left: 28px;
     padding-bottom: 4px;
   }
+  
   .days {
     grid-area: days;
     display: grid;
@@ -172,9 +183,11 @@ while (tempDate <= endDate) {
     font-size: 0.75rem;
     gap: 4px;
   }
+  
   .day-label {
-      height: 12px;
+    height: 12px;
   }
+  
   .cells {
     grid-area: cells;
     display: grid;
@@ -183,12 +196,14 @@ while (tempDate <= endDate) {
     grid-auto-flow: column;
     gap: 4px;
   }
+  
   .cell {
     width: 12px;
     height: 12px;
     background-color: #3a4048;
     border-radius: 2px;
   }
+  
   .cell[data-level="1"] { background-color: #0e4429; }
   .cell[data-level="2"] { background-color: #006d32; }
   .cell[data-level="3"] { background-color: #26a641; }
@@ -200,5 +215,92 @@ while (tempDate <= endDate) {
     gap: 4px;
     font-size: 0.75rem;
     margin-top: 0.5rem;
+  }
+  
+  /* 移动设备适配 */
+  @media (max-width: 768px) {
+    .activity-container {
+      padding: 1rem;
+    }
+    
+    .activity-header {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+    
+    .activity-header h2 {
+      font-size: 1.1rem;
+    }
+    
+    .activity-stats {
+      font-size: 0.8rem;
+    }
+    
+    .activity-grid-wrapper {
+      align-items: flex-start;
+    }
+    
+    .cells {
+      grid-template-columns: repeat(53, 10px);
+      grid-template-rows: repeat(7, 10px);
+      gap: 3px;
+    }
+    
+    .cell {
+      width: 10px;
+      height: 10px;
+    }
+    
+    .months {
+      font-size: 0.7rem;
+      margin-left: 24px;
+    }
+    
+    .days {
+      font-size: 0.7rem;
+      gap: 3px;
+    }
+    
+    .day-label {
+      height: 10px;
+    }
+    
+    .legend {
+      font-size: 0.7rem;
+      margin-top: 0.75rem;
+    }
+  }
+  
+  /* 小屏幕设备进一步优化 */
+  @media (max-width: 480px) {
+    .activity-container {
+      padding: 0.75rem;
+    }
+    
+    .cells {
+      grid-template-columns: repeat(53, 8px);
+      grid-template-rows: repeat(7, 8px);
+      gap: 2px;
+    }
+    
+    .cell {
+      width: 8px;
+      height: 8px;
+    }
+    
+    .months {
+      font-size: 0.65rem;
+      margin-left: 20px;
+    }
+    
+    .days {
+      font-size: 0.65rem;
+      gap: 2px;
+    }
+    
+    .day-label {
+      height: 8px;
+    }
   }
 </style>

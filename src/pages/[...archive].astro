@@ -1,9 +1,10 @@
 ---
 import PostActivity from '@/components/Widgets/PostActivity.astro'
+import PostList from '@/components/PostList.astro'
 import { defaultLocale, moreLocales } from '@/config'
 import { ui } from '@/i18n/ui'
 import Layout from '@/layouts/Layout.astro'
-import { getPosts } from '@/utils/content'
+import { getPosts, getPostsByYear } from '@/utils/content'
 import { getPageInfo } from '@/utils/page'
 
 export async function getStaticPaths() {
@@ -35,7 +36,8 @@ const { lang } = Astro.props
 const { currentLang } = getPageInfo(Astro.url.pathname)
 const currentUI = ui[currentLang as keyof typeof ui] ?? {}
 
-const postlist = await getPosts(defaultLocale)
+const postlist = await getPosts(lang)
+const postsByYear = await getPostsByYear(lang)
 const totalPosts = postlist.length
 const firstPostYear = postlist.length > 0 ? postlist[postlist.length - 1].data.published.getFullYear() : new Date().getFullYear()
 const currentYear = new Date().getFullYear()
@@ -68,4 +70,107 @@ const yearSpan = currentYear - firstPostYear + 1;
         : `Total ${totalPosts} posts across ${yearSpan} years`}
     </p>
   </div>
+
+  <!-- 按年份分组的文章列表 -->
+  <div class="archive-posts mt-16">
+    <h2 class="mb-8 text-2xl font-bold c-primary">
+      {currentUI.posts || 'Posts'}
+    </h2>
+    
+    {[...postsByYear.entries()].map(([year, posts]) => (
+      <section class="mb-12">
+        <h3 class="mb-6 text-xl font-semibold c-primary border-b border-secondary/20 pb-2">
+          {year}
+          <span class="ml-2 text-sm font-normal c-secondary">({posts.length} {lang === 'zh' ? '篇' : 'posts'})</span>
+        </h3>
+        <PostList posts={posts} lang={lang} />
+      </section>
+    ))}
+    
+    {postsByYear.size === 0 && (
+      <div class="text-center py-12">
+        <p class="text-lg c-secondary">
+          {lang === 'zh' ? '暂无文章' : 'No posts yet'}
+        </p>
+      </div>
+    )}
+  </div>
 </Layout>
+
+<style>
+  /* 归档页面样式优化 */
+  .archive-posts {
+    max-width: 100%;
+  }
+  
+  .archive-posts h2 {
+    position: relative;
+  }
+  
+  .archive-posts h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--c-primary), transparent);
+    border-radius: 2px;
+  }
+  
+  .archive-posts section {
+    transition: all 0.3s ease;
+  }
+  
+  .archive-posts section:hover {
+    transform: translateY(-2px);
+  }
+  
+  .archive-posts h3 {
+    position: sticky;
+    top: 80px;
+    background: var(--c-bg);
+    z-index: 10;
+    margin: 0 -1rem;
+    padding: 0.5rem 1rem;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+  }
+  
+  /* 移动设备优化 */
+  @media (max-width: 768px) {
+    .archive-posts {
+      margin-top: 2rem;
+    }
+    
+    .archive-posts h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .archive-posts h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      position: static;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      backdrop-filter: none;
+    }
+    
+    .archive-posts section {
+      margin-bottom: 2rem;
+    }
+    
+    .archive-posts section:hover {
+      transform: none;
+    }
+  }
+  
+  /* 暗色模式适配 */
+  @media (prefers-color-scheme: dark) {
+    .archive-posts h3 {
+      background: var(--c-bg);
+    }
+  }
+</style>
