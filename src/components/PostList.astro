@@ -22,7 +22,8 @@ export interface Props {
 }
 
 function getPostPath(post: Post) {
-  const slug = post.data.abbrlink || post.id
+  // 使用 abbrlink 或者移除文件扩展名的 id 作为 slug
+  const slug = post.id.replace(/\.(md|mdx)$/, '')
 
   if (lang === defaultLocale) {
     return `/posts/${slug}/`
@@ -44,7 +45,7 @@ function getPostPath(post: Post) {
           class="cjk:tracking-0.02em"
           lg={isHome ? 'font-medium text-4.5' : ''}
           href={getPostPath(post)}
-          transition:name={`post-${post.data.abbrlink || post.id}${lang ? `-${lang}` : ''}`}
+          transition:name={`post-${post.id}${lang ? `-${lang}` : ''}`}
           data-disable-theme-transition
         >
           {post.data.title}
@@ -62,7 +63,7 @@ function getPostPath(post: Post) {
       {/* mobile post time */}
       <div
         class="py-0.8 text-3.5 font-time lg:hidden"
-        transition:name={`time-${post.data.abbrlink || post.id}${lang ? `-${lang}` : ''}`}
+        transition:name={`time-${post.id}${lang ? `-${lang}` : ''}`}
         data-disable-theme-transition
       >
         <PostDate
@@ -79,13 +80,25 @@ function getPostPath(post: Post) {
         />
       </div>
 
-      {/* desktop post description */}
-      {isHome && (
-        <div
-          class="heti hidden"
-          lg="mt-2.25 block"
-        >
-          <p>{getPostDescription(post, 'list')}</p>
+      {/* post description - 显示在所有页面和设备上 */}
+      <div
+        class="heti mt-2"
+        lg="mt-2.25"
+      >
+        <p class="line-clamp-2 text-sm c-secondary">{getPostDescription(post, 'list')}</p>
+      </div>
+
+      {/* post tags - 显示文章标签 */}
+      {post.data.tags && post.data.tags.length > 0 && (
+        <div class="mt-2 flex flex-wrap gap-2">
+          {post.data.tags.slice(0, 5).map((tag: string) => (
+            <span class="inline-block border border-secondary/20 rounded-full bg-secondary/10 px-2 py-0.5 text-xs c-secondary">
+              #{tag}
+            </span>
+          ))}
+          {post.data.tags.length > 5 && (
+            <span class="text-xs c-secondary/70">+{post.data.tags.length - 5}</span>
+          )}
         </div>
       )}
     </li>

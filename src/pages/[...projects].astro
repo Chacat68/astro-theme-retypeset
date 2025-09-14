@@ -1,0 +1,79 @@
+---
+import { getCollection } from 'astro:content'
+import ProjectCard from '@/components/ProjectCard.astro'
+import { defaultLocale, moreLocales } from '@/config'
+import Layout from '@/layouts/Layout.astro'
+
+export async function getStaticPaths() {
+  type PathItem = {
+    params: { projects: string }
+    props: { lang: string }
+  }
+
+  const paths: PathItem[] = []
+
+  // Default locale
+  paths.push({
+    params: { projects: 'projects/' },
+    props: { lang: defaultLocale },
+  })
+
+  // More locales
+  moreLocales.forEach((lang: string) => {
+    paths.push({
+      params: { projects: `${lang}/projects/` },
+      props: { lang },
+    })
+  })
+
+  return paths
+}
+
+const { lang } = Astro.props
+
+// 获取所有项目数据
+const allProjects = await getCollection('projects')
+// 根据语言筛选项目，如果没有对应语言则使用默认语言
+const projects = allProjects
+  .filter(project => project.data.lang === lang || project.data.lang === '')
+  .sort((a, b) => {
+    // 首先按featured排序，然后按order排序
+    if (a.data.featured !== b.data.featured) {
+      return b.data.featured ? 1 : -1
+    }
+    return (a.data.order || 0) - (b.data.order || 0)
+  })
+---
+
+<Layout>
+  <!-- 装饰线 -->
+  <div class="uno-decorative-line" />
+
+  <!-- 页面标题 -->
+  <div class="mb-8">
+    <h1 class="mb-4 text-4xl font-bold">项目展示</h1>
+    <p class="text-lg text-gray-600 dark:text-gray-400">
+      这些是我正在进行的项目，不断更新中
+    </p>
+  </div>
+
+  <!-- 项目网格 -->
+  <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
+    {projects.map(project => (
+      <ProjectCard project={project} />
+    ))}
+  </div>
+
+  <!-- 如果没有项目 -->
+  {projects.length === 0 && (
+    <div class="py-12 text-center">
+      <p class="text-gray-500 dark:text-gray-400">暂无项目展示</p>
+    </div>
+  )}
+</Layout>
+
+<style>
+  .uno-decorative-line {
+    @apply w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700 mb-8;
+  }
+</style>

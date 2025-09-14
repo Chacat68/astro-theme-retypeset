@@ -2,7 +2,7 @@
 title: 港乐集《假使世界 原来不像你预期》
 published: 2025-03-09 12:00:00
 updated: 2025-03-09 12:00:00
-description: '风雨总有限期　终于会等到梦寐 --南區少年兒童合唱團'
+description: '风雨总有限期 终于会等到梦寐 --南區少年兒童合唱團'
 image: 'https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250501171355837.png?imageSlim'
 tags: [粤语音乐, 方皓玟, 港乐集, 南区少年儿童合唱团, 翻唱]
 category: '音乐欣赏'
@@ -19,7 +19,7 @@ draft: false
 
 然而，正如方皓玟在这首《假使世界 原来不像你预期》中所唱的那样，或许生活的真谛不在于一切如愿，而在于我们如何面对那些不如预期的时刻。当风雨来临，我们是选择逃避，还是怀着谦卑之心迎接挑战？当全城在变迁，我们是随波逐流，还是坚守内心，不减"你是你"？
 
-南区少年儿童合唱团的这版翻唱，以纯净的童声演绎这首充满哲理的歌曲，别有一番韵味。那清澈的嗓音中透露出的坚定与希望，仿佛在告诉我们：风雨总有限期，终于会等到梦寐。
+南区少年儿童合唱团的这版翻唱，以纯净的童声演绎这首充满哲理的歌曲，别有一番风味。那清澈的嗓音中透露出的坚定与希望，仿佛在告诉我们：风雨总有限期，终于会等到梦寐。
 
 <iframe width="750" height="420" src="//player.bilibili.com/player.html?isOutside=true&aid=317758626&bvid=BV19P411a7f6&cid=1248875832&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 

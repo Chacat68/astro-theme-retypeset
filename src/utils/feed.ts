@@ -1,4 +1,3 @@
-import type { APIContext, ImageMetadata } from 'astro'
 import type { CollectionEntry } from 'astro:content'
 import { getImage } from 'astro:assets'
 import { getCollection } from 'astro:content'
@@ -15,48 +14,37 @@ const markdownParser = new MarkdownIt()
 const { title, description, url, author } = themeConfig.site
 const followConfig = themeConfig.seo?.follow
 
-// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// Dynamically import all images from /src/content/posts/_images
-const imagesGlob = import.meta.glob<{ default: ImageMetadata }>(
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 动态导入 /src/content/posts/_images 目录下的所有图片
+const imagesGlob = import.meta.glob(
   '/src/content/posts/_images/**/*.{jpeg,jpg,png,gif,webp}',
 )
 
-/**
- * Converts relative image paths to absolute URLs
- *
- * @param srcPath - Relative image path from markdown content
- * @param baseUrl - Site base URL
- * @returns Optimized image URL or null if processing fails
- */
-async function _getAbsoluteImageUrl(srcPath: string, baseUrl: string) {
-  // Remove relative path prefixes (../ and ./) from image source path
-  const prefixRemoved = srcPath.replace(/^(?:\.\.\/)+|^\.\//, '')
-  const absolutePath = `/src/content/posts/${prefixRemoved}`
-  const imageImporter = imagesGlob[absolutePath]
-
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// 缓存的图片获取函数
+const getCachedImage = memoize(async (imagePath: string) => {
+  const imageImporter = imagesGlob[imagePath]
   if (!imageImporter) {
+    console.warn(`Image not found: ${imagePath}`)
     return null
   }
 
-  // Import image module and extract its metadata
-  const imageMetadata = await imageImporter()
-    .then(importedModule => importedModule.default)
-    .catch((error) => {
-      console.warn(`Failed to import image: ${absolutePath}`, error)
+  try {
+    const importedModule = await imageImporter()
+    const imageMetadata = (importedModule as any)?.default
+    
+    if (!imageMetadata) {
+      console.warn(`Image metadata not found for: ${imagePath}`)
       return null
-    })
+    }
 
-  if (!imageMetadata) {
+    const optimizedImage = await getImage({ src: imageMetadata })
+    return optimizedImage
+  } catch (error) {
+    console.error(`Error processing image ${imagePath}:`, error)
     return null
   }
-
-  // Create optimized image from metadata
-  const optimizedImage = await getImage({ src: imageMetadata })
-  return new URL(optimizedImage.src, baseUrl).toString()
-}
-
-// Export memoized version
-const getAbsoluteImageUrl = memoize(_getAbsoluteImageUrl)
+})
 
 /**
  * Fix relative image paths in HTML content
@@ -84,8 +72,11 @@ async function fixRelativeImagePaths(htmlContent: string, baseUrl: string): Prom
         }
 
         // Process images from src/content/posts/_images directory
-        const absoluteImageUrl = await getAbsoluteImageUrl(src, baseUrl)
-        if (absoluteImageUrl) {
+        const prefixRemoved = src.replace(/^(?:\.\.\/)+|^\.\//, '')
+        const absolutePath = `/src/content/posts/${prefixRemoved}`
+        const optimizedImage = await getCachedImage(absolutePath)
+        if (optimizedImage) {
+          const absoluteImageUrl = new URL(optimizedImage.src, baseUrl).toString()
           img.setAttribute('src', absoluteImageUrl)
         }
       }
@@ -155,7 +146,8 @@ export async function generateFeed({ lang }: { lang?: string } = {}) {
 
   // Add posts to feed
   for (const post of recentPosts) {
-    const slug = post.data.abbrlink || post.id
+    // 使用移除文件扩展名的 id 作为 slug
+    const slug = post.id.replace(/\.(md|mdx)$/, '')
     const link = new URL(`posts/${slug}/`, siteURL).toString()
 
     // Optimize content processing
@@ -209,7 +201,7 @@ export async function generateFeed({ lang }: { lang?: string } = {}) {
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // Generate RSS 2.0 format feed
-export async function generateRSS(context: APIContext) {
+export async function generateRSS(context: any) {
   const feed = await generateFeed({
     lang: context.params?.lang as string | undefined,
   })
@@ -229,7 +221,7 @@ export async function generateRSS(context: APIContext) {
 }
 
 // Generate Atom 1.0 format feed
-export async function generateAtom(context: APIContext) {
+export async function generateAtom(context: any) {
   const feed = await generateFeed({
     lang: context.params?.lang as string | undefined,
   })

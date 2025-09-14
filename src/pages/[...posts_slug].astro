@@ -23,9 +23,9 @@ export async function getStaticPaths() {
   // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
   // Use a Map to store the relationship between post slugs and their supported languages
   // Set is used to store the supported languages for each post
-  const slugToLangsMap = posts.reduce((map, post) => {
-    const slug = post.data.abbrlink || post.id
-    const lang = post.data.lang
+  const slugToLangsMap = posts.reduce((map: Map<string, Set<string>>, post: CollectionEntry<'posts'>) => {
+    const slug = post.id.replace(/\.(md|mdx)$/, '')
+    const lang = post.data.lang || defaultLocale
 
     if (!map.has(slug)) {
       map.set(slug, new Set(lang ? [lang] : allLocales))
@@ -40,7 +40,7 @@ export async function getStaticPaths() {
   // Convert Map<slug, Set<langs>> to Record<slug, langs[]> structure
   // Sort languages according to the order defined in allLocales
   const slugToLangs = Object.fromEntries(
-    Array.from(slugToLangsMap.entries()).map(([slug, langs]) => [
+    Array.from<[string, Set<string>], [string, string[]]>(slugToLangsMap.entries(), ([slug, langs]) => [
       slug,
       [...langs].sort((a, b) => allLocales.indexOf(a) - allLocales.indexOf(b)),
     ]),
@@ -58,8 +58,8 @@ export async function getStaticPaths() {
   posts.forEach((post: CollectionEntry<'posts'>) => {
     // Show drafts in dev mode only
     if ((import.meta.env.DEV || !post.data.draft)
-      && (post.data.lang === defaultLocale || post.data.lang === '')) {
-      const slug = post.data.abbrlink || post.id
+      && (post.data.lang === defaultLocale || post.data.lang === '' || !post.data.lang)) {
+      const slug = post.id.replace(/\.(md|mdx)$/, '')
 
       paths.push({
         params: { posts_slug: `posts/${slug}/` },
@@ -77,8 +77,8 @@ export async function getStaticPaths() {
     posts.forEach((post: CollectionEntry<'posts'>) => {
       // Process posts with matching language or no language specified
       if ((import.meta.env.DEV || !post.data.draft)
-        && (post.data.lang === lang || post.data.lang === '')) {
-        const slug = post.data.abbrlink || post.id
+        && (post.data.lang === lang || post.data.lang === '' || !post.data.lang)) {
+        const slug = post.id.replace(/\.(md|mdx)$/, '')
         paths.push({
           params: { posts_slug: `${lang}/posts/${slug}/` },
           props: {
@@ -112,7 +112,7 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
       <!-- Title -->
       <h1 class="post-title">
         <span
-          transition:name={`post-${post.data.abbrlink || post.id}${lang ? `-${lang}` : ''}`}
+          transition:name={`post-${post.id}${lang ? `-${lang}` : ''}`}
           data-disable-theme-transition
         >
           {post.data.title}
@@ -124,7 +124,7 @@ const { Content, headings, remarkPluginFrontmatter } = await render(post)
     <div
       id="post-date"
       class="mb-17.2 block c-primary font-time"
-      transition:name={`time-${post.data.abbrlink || post.id}${lang ? `-${lang}` : ''}`}
+      transition:name={`time-${post.id}${lang ? `-${lang}` : ''}`}
       data-disable-theme-transition
     >
       <PostDate

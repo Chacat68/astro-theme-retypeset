@@ -1,0 +1,204 @@
+---
+import type { CollectionEntry } from 'astro:content'
+// src/components/Widgets/PostActivity.astro
+import { defaultLocale } from '@/config'
+import { getPosts } from '@/utils/content'
+
+const postlist: CollectionEntry<'posts'>[] = await getPosts(defaultLocale)
+
+const yearMap: Record<string, number[]> = {}
+let minYear = new Date().getFullYear()
+const totalPosts = postlist.length
+let activeDays = 0
+let maxPostsPerDay = 0
+
+const dailyCounts: Record<string, number> = {}
+
+postlist.forEach((post) => {
+  const year = post.data.published.getFullYear()
+  const month = post.data.published.getMonth()
+  const day = post.data.published.toISOString().split('T')[0]
+
+  if (minYear > year) {
+    minYear = year
+  }
+
+  if (!yearMap[year]) {
+    yearMap[year] = new Array(12).fill(0)
+  }
+  yearMap[year][month]++
+
+  if (!dailyCounts[day]) {
+    dailyCounts[day] = 0
+  }
+  dailyCounts[day]++
+})
+
+activeDays = Object.keys(dailyCounts).length
+maxPostsPerDay = Math.max(...Object.values(dailyCounts))
+
+// --- Contribution graph data calculation ---
+type Day = {
+    date: string
+    count: number
+    level: number
+}
+const allDays: Day[] = []
+const totalCells = 53 * 7 // 371 days, to fill a 53x7 grid
+
+// To align the grid like GitHub, we end on a Saturday and show the last ~year.
+const today = new Date()
+const endDate = new Date(today)
+endDate.setDate(today.getDate() + (6 - today.getDay())) // Find the upcoming Saturday
+
+const startDate = new Date(endDate)
+startDate.setDate(endDate.getDate() - (totalCells - 1))
+
+for (let i = 0; i < totalCells; i++) {
+    const date = new Date(startDate)
+    date.setDate(date.getDate() + i)
+    const dateStr = date.toISOString().split('T')[0]
+    const count = dailyCounts[dateStr] || 0
+    allDays.push({
+        date: dateStr,
+        count,
+        level: maxPostsPerDay > 0 ? Math.ceil((count / maxPostsPerDay) * 4) : 0,
+    })
+}
+
+// Generate dynamic month labels based on the calculated date range.
+const monthLabels: string[] = []
+const tempDate = new Date(startDate)
+// eslint-disable-next-line no-unmodified-loop-condition
+while (tempDate <= endDate) {
+    const monthName = tempDate.toLocaleString('en-US', { month: 'short' })
+    if (monthLabels.length === 0 || monthLabels[monthLabels.length - 1] !== monthName) {
+        monthLabels.push(monthName)
+    }
+    // Move to the next month
+    const currentMonth = tempDate.getMonth()
+    tempDate.setMonth(currentMonth + 1)
+    // Set to the first day to avoid skipping months (e.g., Jan 31 -> Mar 3)
+    if (tempDate.getMonth() !== (currentMonth + 1) % 12) {
+        tempDate.setDate(0)
+    }
+}
+---
+
+<div class="activity-container">
+  <div class="activity-header">
+    <h2>文章发布</h2>
+    <div class="activity-stats">
+      总计 {totalPosts} 篇文章 活跃 {activeDays} 天 最多 {maxPostsPerDay} 篇/天
+    </div>
+  </div>
+  <div class="activity-grid-wrapper">
+    <div class="activity-grid">
+      <div class="months">
+        {monthLabels.map(label => <div class="month">{label}</div>)}
+      </div>
+      <div class="days">
+        {Array.from({ length: 7 }).map((_, i) => <div class="day-label">{['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'][i]}</div>)}
+      </div>
+      <div class="cells">
+        {allDays.map(day => (
+          <div
+            class="cell"
+            data-level={day.level}
+            title={`${day.date}: ${day.count} posts`}
+          />
+        ))}
+      </div>
+    </div>
+    <div class="legend">
+      <span>Less</span>
+      <div class="cell" data-level="0"></div>
+      <div class="cell" data-level="1"></div>
+      <div class="cell" data-level="2"></div>
+      <div class="cell" data-level="3"></div>
+      <div class="cell" data-level="4"></div>
+      <span>More</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .activity-container {
+    background-color: #282c34;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    color: #abb2bf;
+    margin-bottom: 2rem;
+  }
+  .activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .activity-header h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #e6e6e6;
+  }
+  .activity-stats {
+    font-size: 0.875rem;
+  }
+  .activity-grid-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .activity-grid {
+    display: grid;
+    grid-template-areas:
+      "months months"
+      "days cells";
+    grid-template-columns: auto 1fr;
+    gap: 4px;
+  }
+  .months {
+    grid-area: months;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    font-size: 0.75rem;
+    margin-left: 28px;
+    padding-bottom: 4px;
+  }
+  .days {
+    grid-area: days;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    font-size: 0.75rem;
+    gap: 4px;
+  }
+  .day-label {
+      height: 12px;
+  }
+  .cells {
+    grid-area: cells;
+    display: grid;
+    grid-template-columns: repeat(53, 12px);
+    grid-template-rows: repeat(7, 12px);
+    grid-auto-flow: column;
+    gap: 4px;
+  }
+  .cell {
+    width: 12px;
+    height: 12px;
+    background-color: #3a4048;
+    border-radius: 2px;
+  }
+  .cell[data-level="1"] { background-color: #0e4429; }
+  .cell[data-level="2"] { background-color: #006d32; }
+  .cell[data-level="3"] { background-color: #26a641; }
+  .cell[data-level="4"] { background-color: #39d353; }
+
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+</style>

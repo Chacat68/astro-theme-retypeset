@@ -28,9 +28,9 @@ Ollama的使用非常简单，只需几个步骤即可：
 
 1. 安装Ollama，访问Ollama官方网站：https://ollama.com/。
 2. 下载要使用的语言模型。（在终端上运行下表Download列的命令）
-    
+
     <!-- ![https://blog-1259751088.cos.ap-shanghai.myqcloud.com/uPic/CleanShot 2024-03-09 at 19.31.22.png](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104001833151.png?imageSlim) -->
-    
+
 3. 使用Ollama API加载语言模型。
 4. 调用语言模型API进行预测。
 
@@ -64,7 +64,7 @@ Ollama的使用非常简单，只需几个步骤即可：
 
 如果要删除,复制下面的命令，将"llama2"替换为需要删除的模型即可
 
-```jsx
+```bash
 ollama rm llama2
 ```
 
@@ -73,17 +73,16 @@ ollama rm llama2
 > 2024/06/07更新
 
 - Qwen2（7B）
-    
+
     当前本地最好的模型，在实际使用体验中，翻译、日常对话等使用场景，比Llama 3的体验要好
-    
+
     Qwen2 是阿里云自主研发的超大规模预训练语言模型，能够处理多种自然语言任务，包括但不限于文本生成、翻译、问答等。它的能力体现在理解复杂的语境以及生成高质量、多样化的响应，适用于诸如对话系统、文本创作、智能客服等多种场景。
-    
+
 - Mistral:v0.3（日常对话）
-    
+
     更新了v0.3版本
-    
+
     Mistral-7B-v0.3 是由 Mistral AI 团队开发的大型语言模型（LLM），是 Mistral-7B-v0.2 的升级版。该模型在多个方面进行了改进和增强。通过扩展词汇表、改进分词器支持以及引入函数调用的一系列战略改进，展示了令人鼓舞的结果。
-    
 
 ### 寻找更多模型
 
@@ -95,13 +94,11 @@ ollama rm llama2
 
 [Model & API Providers Analysis | Artificial Analysis](https://artificialanalysis.ai/)
 
-
 💡 林哥的大模型野榜
 
 一个更适合中国宝宝体质的大模型产品的排行榜
 
 [林哥的大模型野榜](https://lyihub.com/)
-
 
 💡 Open LLM Leaderboard
 
@@ -109,20 +106,17 @@ Hugging Face是开源模型流行的社区，这是由他们官方维护的排�
 
 [Open LLM Leaderboard - a Hugging Face Space by HuggingFaceH4](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 
-
 💡 SuperCLUE总排行榜
 
 SuperCLUE 是一个中文通用大模型综合性评测基准，从三个不同的维度评价模型的能力：基础能力、专业能力和中文特性能力。
 
 [SuperCLUE](https://www.superclueai.com/)
 
-
 💡 MMLU 大规模多任务语言理解基准
 
 MMLU 全称 Massive Multitask Language Understanding，是一种针对大模型的语言理解能力的测评，是目前最著名的大模型语义理解测评之一，由UC Berkeley大学的研究人员
 
 [Papers with Code - MMLU Benchmark (Multi-task Language Understanding)](https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu)
-
 
 💡 LLMEval
 
@@ -196,7 +190,7 @@ https://github.com/lobehub/lobe-chat
 ### BMO Chatbot
 
 > Obsidian的AI插件，使用 Ollama、LM Studio、Anthropic、Google Gemini、Mistral AI、OpenAI 等大型语言模型（LLM）为Obsidian生成和集思广益时，记录你的想法。
-> 
+>
 
 <!-- ![](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250104002535913.png?imageSlim) -->
 

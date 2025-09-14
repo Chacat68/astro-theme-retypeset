@@ -28,7 +28,7 @@ const imageConfig = imageHostURL
 export default defineConfig({
   site: siteUrl,
   base: '/',
-  trailingSlash: 'always',
+  trailingSlash: 'never',
   prefetch: {
     prefetchAll: true,
     defaultStrategy: 'viewport', // hover, tap, viewport, load
@@ -49,6 +49,7 @@ export default defineConfig({
     partytown({
       config: {
         forward: ['dataLayer.push', 'gtag'],
+        debug: true,
       },
     }),
     sitemap(),

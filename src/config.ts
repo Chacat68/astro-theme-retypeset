@@ -172,7 +172,7 @@ export const themeConfig: ThemeConfig = {
       },
       {
         name: 'X',
-         url: 'https://x.com/Chacat68',
+        url: 'https://x.com/Chacat68',
       },
     ],
     // 网站开始年份

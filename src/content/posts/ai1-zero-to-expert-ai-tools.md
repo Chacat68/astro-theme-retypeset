@@ -55,12 +55,12 @@ ChatGPT 助理
 作为开发助手
 
 > 我要创建一个iOS开发项目，第1步的代码应该怎么创建
-> 
+>
 
 <!-- ![iOS开发项目创建示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282158717.png) -->
 
 > 这是一个倒计时类型的APP，我要怎么写逻辑代码
-> 
+>
 
 <!-- ![倒计时APP逻辑代码示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282200636.png) -->
 
@@ -106,18 +106,18 @@ MidJourney是一款基于人工智能算法的生成式工具，它能根据用�
 ### 3.2 使用体验
 
 > 建议新用户使用免费版本，并加入Discord。在公共频道中，尝试以关键词的形式描述您心中的画面。
-> 
+>
 
 当你练习了一段时间，熟悉关键词的使用方法后，可以考虑进行付费。根据自己的使用频率和强度选择不同的付费档位。付费后，你的个人创作内容在MidJourney Bot窗口中显示，其他人无法预览你创作的过程。
 
 > 在MidJourney Bot聊天窗口输入斜杠/ 符号，选择/imagine prompt：关键词 +风格 +参数
-> 
+>
 
 <!-- ![MidJourney 创作示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282324801.png) -->
 
 每次你创作内容时，机器人都会以4个预览图的形式帮你呈现。你可以选择任意的图进行细化，也可以基于这些图进行细节的修改。
 
-<!-- ![MidJourney 创作示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282327529.png) --> 
+<!-- ![MidJourney 创作示例](https://blog-1259751088.cos.ap-shanghai.myqcloud.com/202302282327529.png) -->
 
 - U是继续细化当前图片，V是基于这张图片进行细节的变化
 

@@ -47,8 +47,9 @@ async function _checkPostSlugDuplication(posts: CollectionEntry<'posts'>[]): Pro
   const duplicates: string[] = []
 
   posts.forEach((post) => {
-    const lang = post.data.lang
-    const slug = post.data.abbrlink || post.id
+    const lang = post.data.lang ?? defaultLocale
+    // 使用移除文件扩展名的 id 作为 slug
+    const slug = post.id.replace(/\.(md|mdx)$/, '')
 
     if (!slugMap.has(lang)) {
       slugMap.set(lang, new Set())
@@ -87,7 +88,7 @@ async function _getPosts(lang?: string) {
     ({ data }: CollectionEntry<'posts'>) => {
       // Show drafts in dev mode only
       const shouldInclude = import.meta.env.DEV || !data.draft
-      return shouldInclude && (data.lang === currentLang || data.lang === '')
+      return shouldInclude && (data.lang === currentLang || data.lang === '' || !data.lang)
     },
   )
 
@@ -223,12 +224,12 @@ export const getPostsByTag = memoize(_getPostsByTag)
 async function _getTagSupportedLangs(tag: string) {
   const posts = await getCollection(
     'posts',
-    ({ data }) => !data.draft,
+    ({ data }: CollectionEntry<'posts'>) => !data.draft,
   )
   const { allLocales } = await import('@/config')
 
-  return allLocales.filter(locale =>
-    posts.some(post =>
+  return allLocales.filter((locale: string) =>
+    posts.some((post: CollectionEntry<'posts'>) =>
       post.data.tags?.includes(tag)
       && (post.data.lang === locale || post.data.lang === ''),
     ),

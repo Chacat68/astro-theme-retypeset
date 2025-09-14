@@ -2,7 +2,7 @@
 title: ComfyUI实战：模型、插件与工作流全解析
 published: 2024-10-03
 updated: 2024-10-03
-description: 'ComfyUI 是一个专为 Stable Diffusion 设计的基于节点的图形用户界面。'
+description: 'ComfyUI 是一个专为 Stable Diffusion 设计的基于节点的图形用户界面。'
 image: 'https://blog-1259751088.cos.ap-shanghai.myqcloud.com/20250501174614910.png?imageSlim'
 tags: [ComfyUI, 实践经验, 创作, 工具]
 category: '人工智能'
@@ -13,7 +13,7 @@ draft: false
 
 # ComfyUI 介绍
 
-ComfyUI 是一个专为 **Stable Diffusion** 设计的基于节点的图形用户界面（GUI），旨在简化和优化图像生成过程。通过将整个图像生成过程分解为多个独立的节点，使用户能够灵活地构建和调整工作流。
+ComfyUI 是一个专为 **Stable Diffusion** 设计的基于节点的图形用户界面（GUI），旨在简化和优化图像生成过程。通过将整个图像生成过程分解为多个独立的节点，使用户能够灵活地构建和调整工作流。
 
 每个节点执行特定的功能，如加载模型、输入文本提示、生成图像等。这种结构使得用户可以更好地控制生成过程，提升了可定制性和复现性。
 
@@ -47,7 +47,7 @@ https://github.com/comfyanonymous/ComfyUI
 
 [更多平台安装细节](https://docs.comfy.org/get_started/manual_install)
 
-全部安装完毕后，可以通过浏览器访问 `http://127.0.0.1:8188/` 来打开操作界面
+全部安装完毕后，可以通过浏览器访问 `http://127.0.0.1:8188/` 来打开操作界面
 
 ## 客户端安装
 
@@ -103,7 +103,7 @@ ComfyUI 比较方便一个点就是可以直接使用其他人创建的流程，
 
 ### OpenArt Workflows
 
-OpenArt 提供了一个平台，用户可以发现、分享和运行各种 **ComfyUI 工作流程**，这些工作流程旨在利用人工智能促进创意任务。
+OpenArt 提供了一个平台，用户可以发现、分享和运行各种 **ComfyUI 工作流程**，这些工作流程旨在利用人工智能促进创意任务。
 
 网站地址：
 https://openart.ai/workflows/all

@@ -1,0 +1,71 @@
+---
+import PostActivity from '@/components/Widgets/PostActivity.astro'
+import { defaultLocale, moreLocales } from '@/config'
+import { ui } from '@/i18n/ui'
+import Layout from '@/layouts/Layout.astro'
+import { getPosts } from '@/utils/content'
+import { getPageInfo } from '@/utils/page'
+
+export async function getStaticPaths() {
+  type PathItem = {
+    params: { archive: string }
+    props: { lang: string }
+  }
+
+  const paths: PathItem[] = []
+
+  // 默认语言
+  paths.push({
+    params: { archive: 'archive' },
+    props: { lang: defaultLocale },
+  })
+
+  // 其他语言
+  moreLocales.forEach((lang: string) => {
+    paths.push({
+      params: { archive: `${lang}/archive` },
+      props: { lang },
+    })
+  })
+
+  return paths
+}
+
+const { lang } = Astro.props
+const { currentLang } = getPageInfo(Astro.url.pathname)
+const currentUI = ui[currentLang as keyof typeof ui] ?? {}
+
+const postlist = await getPosts(defaultLocale)
+const totalPosts = postlist.length
+const firstPostYear = postlist.length > 0 ? postlist[postlist.length - 1].data.published.getFullYear() : new Date().getFullYear()
+const currentYear = new Date().getFullYear()
+const yearSpan = currentYear - firstPostYear + 1;
+
+---
+
+<Layout>
+  <!-- 装饰线 -->
+  <div class="uno-decorative-line" />
+
+  <!-- 页面标题 -->
+  <div class="mb-12">
+    <h1 class="mb-4 text-4xl c-primary font-bold font-title">
+      {currentUI.archive || 'Archive'}
+    </h1>
+    <p class="text-lg c-secondary">
+      {lang === 'zh' ? '按时间归档的所有文章' : 'All posts organized by time'}
+    </p>
+  </div>
+
+  <!-- Post Activity Grid -->
+  <PostActivity />
+
+  <!-- 统计信息 -->
+  <div class="archive-stats mt-16 rounded-lg bg-gray-100 p-6 text-center dark:bg-gray-800">
+    <p class="text-lg c-secondary">
+      {lang === 'zh'
+        ? `共 ${totalPosts} 篇文章，跨越 ${yearSpan} 年`
+        : `Total ${totalPosts} posts across ${yearSpan} years`}
+    </p>
+  </div>
+</Layout>

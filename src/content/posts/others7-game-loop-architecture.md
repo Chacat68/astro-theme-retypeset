@@ -26,7 +26,7 @@ draft: false
 3. **渲染画面**：将更新后的游戏状态绘制到屏幕上，形成玩家看到的画面。
 4. **管理时间**：确保游戏以稳定的速度运行，避免出现卡顿或运行过快的情况。
 
-简单来说，游戏循环就像游戏的"心跳"，每一次循环都推动游戏向前迈进一步。
+简单来说，游戏循环就像游戏的"心跳"，每一次循环都推动游戏向前迈一步。
 
 ---
 
@@ -68,7 +68,7 @@ draft: false
 
 以下是一个简化的游戏循环伪代码示例，展示了其基本结构：
 
-```pseudocode
+```plaintext
 while (game_is_running) {
     handle_input();              // 处理用户输入
     update_game_state(delta_time); // 根据时间差更新游戏状态
@@ -94,7 +94,7 @@ while (game_is_running) {
 
 ---
 
-**引用地址**  
+**引用地址**
 原文链接：https://www.nightquestgames.com/the-game-loop-video-game-code-architecture/
 
 ---
