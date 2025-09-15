@@ -62,14 +62,7 @@ const yearSpan = currentYear - firstPostYear + 1;
   <!-- Post Activity Grid -->
   <PostActivity />
 
-  <!-- 统计信息 -->
-  <div class="archive-stats mt-16 rounded-lg bg-gray-100 p-6 text-center dark:bg-gray-800">
-    <p class="text-lg c-secondary">
-      {lang === 'zh'
-        ? `共 ${totalPosts} 篇文章，跨越 ${yearSpan} 年`
-        : `Total ${totalPosts} posts across ${yearSpan} years`}
-    </p>
-  </div>
+
 
   <!-- 按年份分组的文章列表 -->
   <div class="archive-posts mt-16">
