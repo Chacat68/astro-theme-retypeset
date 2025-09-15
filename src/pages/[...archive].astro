@@ -120,14 +120,11 @@ const yearSpan = currentYear - firstPostYear + 1;
   }
   
   .archive-posts h3 {
-    position: sticky;
-    top: 80px;
-    background: var(--c-bg);
-    z-index: 10;
-    margin: 0 -1rem;
-    padding: 0.5rem 1rem;
-    backdrop-filter: blur(10px);
-    border-radius: 8px;
+    /* 移除 sticky 定位，让年份标题随页面正常滚动 */
+    position: static;
+    background: transparent;
+    margin: 0;
+    padding: 0;
   }
   
   /* 移动设备优化 */
