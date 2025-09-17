@@ -124,11 +124,14 @@ while (tempDate <= endDate) {
 
 <style>
   .activity-container {
-    background-color: #282c34;
+    /* 使用主题背景色和边框 */
+    background-color: oklch(var(--un-preset-theme-colors-background));
+    border: 1px solid oklch(var(--un-preset-theme-colors-secondary) / 0.2);
     padding: 1.5rem;
     border-radius: 0.5rem;
-    color: #abb2bf;
+    color: oklch(var(--un-preset-theme-colors-secondary));
     margin-bottom: 2rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
   }
   
   .activity-header {
@@ -143,11 +146,12 @@ while (tempDate <= endDate) {
   .activity-header h2 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #e6e6e6;
+    color: oklch(var(--un-preset-theme-colors-primary));
   }
   
   .activity-stats {
     font-size: 0.875rem;
+    color: oklch(var(--un-preset-theme-colors-secondary));
   }
   
   .activity-grid-wrapper {
@@ -174,6 +178,7 @@ while (tempDate <= endDate) {
     font-size: 0.75rem;
     margin-left: 28px;
     padding-bottom: 4px;
+    color: oklch(var(--un-preset-theme-colors-secondary));
   }
   
   .days {
@@ -182,6 +187,7 @@ while (tempDate <= endDate) {
     grid-template-rows: repeat(7, 1fr);
     font-size: 0.75rem;
     gap: 4px;
+    color: oklch(var(--un-preset-theme-colors-secondary));
   }
   
   .day-label {
@@ -200,14 +206,25 @@ while (tempDate <= endDate) {
   .cell {
     width: 12px;
     height: 12px;
-    background-color: #3a4048;
+    /* 基础颜色使用主题次要颜色的低透明度版本 */
+    background-color: oklch(var(--un-preset-theme-colors-secondary) / 0.1);
     border-radius: 2px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
   }
   
-  .cell[data-level="1"] { background-color: #0e4429; }
-  .cell[data-level="2"] { background-color: #006d32; }
-  .cell[data-level="3"] { background-color: #26a641; }
-  .cell[data-level="4"] { background-color: #39d353; }
+  /* 活跃度等级颜色 - 使用主题高亮色的不同透明度 */
+  .cell[data-level="1"] { 
+    background-color: oklch(var(--un-preset-theme-colors-highlight) / 0.3);
+  }
+  .cell[data-level="2"] { 
+    background-color: oklch(var(--un-preset-theme-colors-highlight) / 0.5);
+  }
+  .cell[data-level="3"] { 
+    background-color: oklch(var(--un-preset-theme-colors-highlight) / 0.7);
+  }
+  .cell[data-level="4"] { 
+    background-color: oklch(var(--un-preset-theme-colors-highlight));
+  }
 
   .legend {
     display: flex;
@@ -215,6 +232,7 @@ while (tempDate <= endDate) {
     gap: 4px;
     font-size: 0.75rem;
     margin-top: 0.5rem;
+    color: oklch(var(--un-preset-theme-colors-secondary));
   }
   
   /* 移动设备适配 */
@@ -302,5 +320,18 @@ while (tempDate <= endDate) {
     .day-label {
       height: 8px;
     }
+  }
+
+  /* 深色主题下的特殊调整 */
+  :global(.dark) .activity-container {
+    /* 在深色主题下，可以稍微调整边框透明度 */
+    border: 1px solid oklch(var(--un-preset-theme-colors-secondary) / 0.15);
+  }
+  
+  /* 为了更好的可访问性，在悬停时显示更多信息 */
+  .cell:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    position: relative;
   }
 </style>
