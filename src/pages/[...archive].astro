@@ -72,10 +72,10 @@ const yearSpan = currentYear - firstPostYear + 1;
     
     {[...postsByYear.entries()].map(([year, posts]) => (
       <section class="mb-12">
-        <h3 class="mb-6 text-xl font-semibold c-primary border-b border-secondary/20 pb-2">
-          {year}
-          <span class="ml-2 text-sm font-normal c-secondary">({posts.length} {lang === 'zh' ? '篇' : 'posts'})</span>
-        </h3>
+        <div class="year-header mb-6">
+          <span class="year-number">{year}</span>
+          <span class="post-count">({posts.length} {lang === 'zh' ? '篇' : 'posts'})</span>
+        </div>
         <PostList posts={posts} lang={lang} />
       </section>
     ))}
@@ -119,6 +119,37 @@ const yearSpan = currentYear - firstPostYear + 1;
     transform: translateY(-2px);
   }
   
+  /* 年份标题样式 */
+  .year-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .year-number {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--c-primary);
+    border: 2px solid var(--c-secondary); /* 普通边框，使用主题颜色 */
+    border-radius: 0.375rem;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .year-number:hover {
+    background: var(--c-secondary);
+    color: var(--c-bg);
+    transform: scale(1.05);
+  }
+  
+  .post-count {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: var(--c-secondary);
+  }
+  
   .archive-posts h3 {
     /* 移除 sticky 定位，让年份标题随页面正常滚动 */
     position: static;
@@ -136,6 +167,15 @@ const yearSpan = currentYear - firstPostYear + 1;
     .archive-posts h2 {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
+    }
+    
+    .year-number {
+      font-size: 1.1rem;
+      padding: 0.2rem 0.6rem;
+    }
+    
+    .post-count {
+      font-size: 0.8rem;
     }
     
     .archive-posts h3 {
